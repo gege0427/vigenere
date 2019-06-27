@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cifra de Vigenère</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href='' rel='stylesheet' type='text/css'>
+		<link href="css/main.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="grid">
+			<h1>Cifra de Vigenère</h1>
+			<p>
+				por <a href="http://github.com/gege0427">Geraldo Melo</a> 
+			</p>
+
+			<form id="form-vigenere">
+				<div class="form-input">
+					<label for="chave">Chave</label>
+					<input type="text" name="chave" id="chave" placeholder="chave" required>
+				</div>
+
+				<div class="form-input">
+					<label for="texto">Texto</label>
+					<textarea name="texto" id="texto" placeholder="texto" required></textarea>
+				</div>
+
+				<div class="form-submit">
+					<input id="cifrar" type="submit" value="Cifrar" onclick="cifrar()">
+					<input id="decifrar" type="submit" value="Decifrar" onclick="decifrar()">
+				</div>
+
+				<div class="form-input">
+					<label for="resultado">Resultado</label>
+					<textarea name="resultado" placeholder="resultado" id="resultado"></textarea>
+				</div>
+			</form>
+		</div>
+		
+		<script src="js/vigenere.js"></script>	
+	</body>
+</html>
